@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Function from './state'
+import Example1 from './multiState'
+import Form from './form'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Form />
   </React.StrictMode>,
   document.getElementById('root')
 );
