@@ -1,0 +1,10 @@
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 9px;
+    font-size: 20px;
+    background-color: black;
+    z-index: 5;
+    box-shadow: 10px;
+  }

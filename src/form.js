@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useState,useEffect} from 'react'
 import './form.css'
 function Form(){
     const [email ,setEmail]=useState('');
@@ -9,7 +9,15 @@ function Form(){
         e.preventDefault();
         console.log(email, password,repassword,check);
       };
-    
+    useEffect (()=>{
+        fetch('https://api.publicapis.org/entries').then(response=>response.json()
+        ).then(responseData=>{
+            console.log(responseData)
+        }
+
+        )
+    })
+   
     return(
         <div>
             <form onSubmit={printValues}>
